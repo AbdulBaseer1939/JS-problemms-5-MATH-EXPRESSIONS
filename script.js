@@ -122,4 +122,41 @@ var totalInPakRupees = (usDoller * 104.80) + (saudiRiyal * 28);
 
 document.write("<br>Total in Pakistani Rupees: " + totalInPakRupees);
 
+// problem:  Write a program to initialize a variable with some number and do arithmetic in following sequence: 
+// a. Add 5 
+// b. Multiply by 10 
+// c. Divide the result by 2 
+// Perform all calculations in a single expression.
 
+var variable = 10;
+var result = (variable + 5) * 10 / 2;
+
+document.write("Result: " + result);
+
+// Problem: The Age Calculator: Forgot how old someone is? Calculate it! 
+// a. Store the current year in a variable. 
+// b. Store their birth year in a variable. 
+// c. Calculate their 2 possible ages based on the stored values. 
+// Output them to the screen like so: “They are either NN or NN years old”. 
+
+var currentYear = 2022;
+var birthYear = 1997;
+
+var age1 = currentYear - birthYear;
+var age2 = currentYear - (birthYear + 1);
+
+document.write("<br>They are either " + age1 + " or " + age2 + " years old.");
+
+// Problem:  The Geometrizer: Calculate properties of a circle. 
+// a. Store a radius into a variable.
+// b. Calculate the circumference based on the radius, and output “The circumference is NN”. 
+// ! (Hint : Circumference of a circle = 2 π r , π = 3.142) 
+// Calculate the area based on the radius, and output “The area is NN”. 
+// ! (Hint: Area of a circle = π r2, π = 3.142)
+
+var radius = 5;
+
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * Math.pow(radius, 2);
+
+document.write("<br>The circumference is " + circumference.toFixed(2) + "<br>The area is " + area.toFixed(2));
