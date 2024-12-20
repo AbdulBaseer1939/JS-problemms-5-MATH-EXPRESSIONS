@@ -53,3 +53,19 @@ document.write("Value after decrement is: " + variable + "<br>");
 
 var remainder = variable % 3;
 document.write("The remainder is: " + remainder);
+
+// problem: Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate the cost of buying 5 tickets to a movie. Example output:
+var ticketPrice = 600;
+
+var totalCost = ticketPrice * 5;
+document.write("Total cost to buy 5 tickets to movie is: " + totalCost + "PKR" + "<br>");
+
+// Problem: Write a script to display multiplication table of any number in your browser. E.g "Table of 4"
+var number = 4;
+
+for (var i = 1; i <= 10; i++) {
+  var result = number * i;
+  document.write(number + " * " + i + " = " + result + "<br>");
+}
+   
+
