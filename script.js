@@ -60,6 +60,47 @@ var ticketPrice = 600;
 var totalCost = ticketPrice * 5;
 document.write("Total cost to buy 5 tickets to movie is: " + totalCost + "PKR" + "<br>");
 
+// Problem: The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here. 
+// a.  Store a Celsius temperature into a variable. 
+// b. Convert it to Fahrenheit & output “NNoC is NNoF”. 
+// c. Now store a Fahrenheit temperature into a variable. 
+// d. Convert it to Celsius & output “NNoF is NNoC”. 
+
+var celsiusTemperature = 25;
+var fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32;
+document.write("25C is " + fahrenheitTemperature + "F<br>");
+
+var fahrenheitTemperature = 77;
+
+var celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9;
+
+document.write("77F is " + celsiusTemperature + "C");
+
+// Problem:  Write a program to implement checkout process of a shopping cart system for an e-commerce website. Store the following in variables;
+// a. Price of item 1 
+// b. Price of item 2 
+// c. Ordered quantity of item 1 
+// d. Ordered Quantity of item 2 
+// e. Shipping charges 
+// Compute the total cost & show the receipt in your browser.
+
+var item1Price = 50;
+var item2Price = 100;
+var item1Quantity = 2;
+var item2Quantity = 1;
+var shippingCharges = 10;
+var totalCost = (item1Price * item1Quantity) + (item2Price * item2Quantity) + shippingCharges;
+
+document.write("<h1>Shopping Cart Receipt</h1>");
+
+document.write("<p>Item 1: " + item1Quantity + " x $" + item1Price + " = $" + (item1Quantity * item1Price) + "</p>");
+
+document.write("<p>Item 2: " + item2Quantity + " x $" + item2Price + " = $" + (item2Quantity * item2Price) + "</p>");
+
+document.write("<p>Shipping Charges: $" + shippingCharges + "</p>");
+
+document.write("<p>Total Cost: $" + totalCost + "</p>");
+
 // Problem: Write a script to display multiplication table of any number in your browser. E.g "Table of 4"
 var number = 4;
 
