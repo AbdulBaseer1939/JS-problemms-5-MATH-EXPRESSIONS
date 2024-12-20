@@ -108,5 +108,18 @@ for (var i = 1; i <= 10; i++) {
   var result = number * i;
   document.write(number + " * " + i + " = " + result + "<br>");
 }
-   
+
+// Problem: Store total marks & marks obtained by a student in 2 variables. Compute the percentage & show the result in your browser.
+var totalMarks = 100;
+var marksObtained = 80;
+var percentage = (marksObtained / totalMarks) * 100;
+
+document.write("Toatl Marks:" ,totalMarks+ "<br>Obtained Marks: ", marksObtained + "<br> Percentage: " + percentage + "%");
+
+// Problem: Assume we have 10 US dollars & 25 Saudi Riyals. Write a script to convert the total currency to Pakistani Rupees. Perform all calculations in a single expression. (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee and 1 Saudi Riyal = 28 Pakistani Rupee).
+var usDoller = 10, saudiRiyal = 25;
+var totalInPakRupees = (usDoller * 104.80) + (saudiRiyal * 28);
+
+document.write("<br>Total in Pakistani Rupees: " + totalInPakRupees);
+
 
