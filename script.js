@@ -160,3 +160,20 @@ var circumference = 2 * Math.PI * radius;
 var area = Math.PI * Math.pow(radius, 2);
 
 document.write("<br>The circumference is " + circumference.toFixed(2) + "<br>The area is " + area.toFixed(2));
+
+// Problem:  The Lifetime Supply Calculator: Ever wonder how much a “lifetime supply” of your favorite snack is? Wonder no more. 
+// a. Store your favorite snack into a variable 
+// b. Store your current age into a variable. 
+// c. Store a maximum age into a variable. 
+// d. Store an estimated amount per day (as a number). 
+// e. Calculate how many would you eat total for the rest of your life. 
+// Output the result to the screen like so: “You will need NNNN to last you until the ripe old age of NN”.
+
+var favoriteSnack = "Chocolate bars";
+var currentAge = 25;
+var maximumAge = 100;
+var estimatedAmountPerDay = 5;
+
+var totalSnackAmount = estimatedAmountPerDay * (maximumAge - currentAge);
+
+document.write("Favorite Snack: ", favoriteSnack + "<br> Current Age: ", currentAge +"<br>Estimated Maximum Age: ", maximumAge+"<br>Amount Snacksper day: ", estimatedAmountPerDay+"<br>You will need " + totalSnackAmount + " " + favoriteSnack + " to last you until the ripe old age of " + maximumAge + ".");
